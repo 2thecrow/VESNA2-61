@@ -28,6 +28,9 @@
 }
 
 @media screen and (max-width: 1480px) {
+    .advantage-tips__item {
+        display: flex;
+    }
     .hero__container {
         padding: 200px 15px 110px 15px;
     }
@@ -60,6 +63,13 @@
         padding: 12px 45px;
     }
 }
+@media screen and (max-width: 1355px) {
+    .advantage-tips {
+        max-width: 930px;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto 90px;
+    }
+}
 
 @media screen and (max-width: 1300px) {
     .header-contacts__container {
@@ -73,6 +83,21 @@
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .advantage-list {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 1200px) {
+    /* 90 */
+    .advantages {
+        padding: 90px 0;
+    }
+    .section-title {
+        font-size: 62px;
+        line-height: 1.1;
+    }
+}
 @media screen and (max-width: 1140px) {
     .nav__item:not(:last-child) {
         margin-right: 15px;
@@ -119,6 +144,22 @@
     }
 }
 
+@media screen and (max-width: 910px) {
+    .section-title {
+        font-size: 56px;
+    }
+    .advantage-tips {
+        max-width: 450px;
+        grid-template-columns: 1fr;
+        margin: 0 auto 90px;
+    }
+    .advantage-list {
+        max-width: 690px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .nav {
         display: none;
@@ -141,7 +182,39 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    /* 60 */
+    .section-title {
+        font-size: 48px;
+    }
+    .advantages__title {
+        margin-bottom: 60px;
+    }
+    .advantage-tips {
+        margin: 0 auto 60px;
+    }
+    .tips-card__title {
+        font-size: 28px;
+    }
+    .advantage-list__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .advantages__title.section-title {
+        font-size: 34px;
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    
+}
 @media screen and (max-width: 500px) {
+    .advantage-list {
+        max-width: 330px;
+        grid-template-columns: 1fr;
+    }
     .hero__logo {
         margin-bottom: 10px;
     }
@@ -154,5 +227,17 @@
     .header-contacts__phone {
         margin-right: 0;
         margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .tips-card {
+        padding: 30px 25px 25px;
+    }
+    .tips-card__title {
+        font-size: 24px;
+    }
+    .tips-card__description {
+        font-size: 16px;
+        line-height: 22px;
     }
 }

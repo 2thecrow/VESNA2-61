@@ -17,14 +17,15 @@
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
     gap: 30px;
+    margin-bottom: 90px;
     &__item {
-        display: flex;
         border-radius: 72px 0px;
     }
     &__card {}
 }
 
 .tips-card {
+    flex: 1;
     display: flex;
     color: var(--text-white);
     padding: 30px 36px 25px;
@@ -56,8 +57,19 @@
 }
 
 .advantage-list {
-    
-    &__item {}
-    &__icon {}
-    &__text {}
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    gap: 30px;
+    &__item {
+        display: flex;
+    }
+    &__icon {
+        margin-right: 15px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--text-white);
+    }
 }
