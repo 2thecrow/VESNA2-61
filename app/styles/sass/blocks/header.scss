@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--bg-white);
+    transition: all .3s ease-in-out;
+    .sticky {
+        padding: 10px 0;
+        transition: all .3s ease-in-out;
+        display: none;
+    }
+    &__container {
+        max-width: 1665px;
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        margin: 0 auto;
+    }
+    &__logo {
+        display: flex;
+        margin-right: 75px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    &__link {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &__container {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+    &__phone {
+        font-weight: 800;
+        line-height: 24px;
+        color: var(--text-color);
+        margin-right: 15px;
+    }
+    &__callback {
+        font-weight: 800;
+        line-height: 24px;
+        color: var(--accent);
+        padding: 0 0 0 23px;
+        background-image: url(/img/dist/nav/phone.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    &__promotion {
+        padding: 12px 55px;
+    }
+}

@@ -1,23 +1,3 @@
-// USER VARIABLES SECTION
-
-$accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
-$lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
-$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-
-// Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px
-$gutter: $grid-gutter-width
-
-// IMPORT SECTION
-
-@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
-
 // FONTS LOAD SECTION
 
 @mixin font($fname, $fstyle, $fweight, $furl)
@@ -27,18 +7,28 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('Lato', normal, 300, '../fonts/Lato-300.woff2')
+@include font('Lato', italic, 300, '../fonts/Lato-300italic.woff2')
+
+@include font('Lato', normal, 400, '../fonts/Lato-400.woff2')
+@include font('Lato', italic, 400, '../fonts/Lato-400italic.woff2')
+
+@include font('Lato', normal, 700, '../fonts/Lato-700.woff2')
+@include font('Lato', italic, 700, '../fonts/Lato-700italic.woff2')
+
+@include font('Lato', normal, 700, '../fonts/Lato-800.woff2')
+//@include font('Lato', italic, 700, '../fonts/Lato-700italic.woff2')
+
+@include font('Lato', normal, 900, '../fonts/Lato-900.woff2')
+@include font('Lato', italic, 900, '../fonts/Lato-900italic.woff2')
 
 // GENERAL CSS SETTINGS
 
 ::placeholder
-	color: #666
+	color: var(--placeholder)
 
 ::selection
-	background-color: $accent
+	background-color: var(--accent)
 	color: #fff
 
 input, textarea
@@ -49,10 +39,12 @@ input, textarea
 		border-color: green
 
 body
-	font-family: $userfont
-	font-size: $fontsize
-	line-height: $lineheight
-	color: $textcolor
-	min-width: 320px
 	position: relative
+	font-family: "Lato"
+	font-weight: 400
+	font-size: 18px
+	line-height: 1.65
+	color: var(--text-color)
 	overflow-x: hidden
+	padding: 0
+	margin: 0

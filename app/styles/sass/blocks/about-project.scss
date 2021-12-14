@@ -1,0 +1,37 @@
+.about-project {
+    padding: 130px 0 0;
+    margin-bottom: -130px;
+    &__map {
+        
+    }
+}
+
+.project-map {
+    position: relative;
+    &__media {
+        display: flex;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__info {}
+    &__description {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 7.7%;
+    }
+    &__badge {
+        max-width: 570px;
+        font-size: 18px;
+        line-height: 32px;
+        background-color: var(--bg-white);
+        background-image: url(/img/dist/about-project/desc-bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding: 80px 55px 80px 120px;
+        border-radius: 4px;
+        z-index: 2;
+    }
+}

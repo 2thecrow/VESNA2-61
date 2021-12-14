@@ -12,16 +12,266 @@
 	<link rel="icon" href="/img/favicon.png">
 	<meta property="og:image" content="/img/dist/preview.jpg">
 	
-	<link rel="stylesheet" href="css/app.min.css">
-	<script src="js/app.min.js"></script>
+	<link rel="stylesheet" href="/css/app.min.css">
+	<script src="/js/app.min.js"></script>
+
+	<!-- JQ -->
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-testss
+	<!-- Header -->
+	<header class="header wrapper">
+		<div class="header__container">
+			<a href="/" class="header__logo">
+				<img src="/img/dist/nav/logo.png" alt="Logo">
+			</a>
+			<nav class="header__nav nav">
+				<ul class="nav__list list-reset">
+					<li class="nav__item">
+						<a href="#" class="nav__link normal-hover transition">О проекте</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link normal-hover transition">Квартиры</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link normal-hover transition">Инфраструктура</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link normal-hover transition">Как купить</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link normal-hover transition">Галерея</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link normal-hover transition">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__contacts header-contacts">
+				<div class="header-contacts__container">
+					<a href="tel:88412500165" class="header-contacts__phone normal-hover transition">8 (8412) 500-165</a>
+					<a href="" class="header-contacts__callback normal-hover transition">Заказать звонок</a>
+				</div>
+				<a href="#" class="header-contacts__promotion default-btn default-btn_green transition">Акции</a>
+			</div>
+			<div class="header__mobile-menu burger">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+			</div>
+		</div>
+	</header>
 
+	<!-- Hero -->
+	<div class="hero wrapper">
+		<div class="hero__container container">
+			<div class="hero__logo">
+				<img src="/img/dist/hero/company-logo.png" alt="Company logo">
+			</div>
+			<div class="hero__slogan">
+				<img src="/img/dist/hero/hero-promotion.png" alt="Hero promotion" loading="lazy">
+			</div>
+			<div class="hero__description">
+				Выгодные цены, более 40 <br> вариантов квартир
+			</div>
+			<a href="#" class="hero__btn default-btn default-btn_green transition">Выбрать планировку</a>
+		</div>
+	</div>
 
+	<!-- About project -->
+	<div class="about-project wrapper">
+		<div class="container-large">
+			<div class="about-project__map project-map">
+				<div class="project-map__media">
+					<img src="/img/dist/about-project/about-map.jpg" alt="Project map">
+					<div class="project-map__info"></div>
+				</div>
+				<div class="project-map__description">
+					<div class="project-map__badge container">
+						Третий (финальный) дом ЖК&nbsp;&laquo;Весна&raquo;&nbsp;&mdash; 
+						это современные квартиры с&nbsp;панорамными 
+						лоджиями и&nbsp;большим выбором планировок 
+						в&nbsp;окружении собственных площадок для 
+						детей и&nbsp;взрослых и&nbsp;развитой внешней инфраструктурой.
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Advantages -->
+	<div class="advantages wrapper">
+		<div class="container">
+			<h2 class="advantages__title section-title">В ЖК «Весна» — комфорт в деталях</h2>
+			<ul class="advantages__tips advantage-tips list-reset">
+				<li class="advantage-tips__item">
+					<div class="advantage-tips__card tips-card">
+						<div class="tips-card__icon">
+							<svg width="57" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)" fill="#fff">
+								  <path d="M56 45.32v-5.29a4.93 4.93 0 0 0-9.84 0v5.3a4.93 4.93 0 0 0 3.28 4.63v2.75h-6.63V.01H13.18v52.7H6.56v-2.75a4.93 4.93 0 0 0 3.28-4.64v-5.29a4.93 4.93 0 0 0-9.84 0v5.3a4.93 4.93 0 0 0 3.28 4.63v2.75H0V56H56v-3.28h-3.27v-2.75A4.93 4.93 0 0 0 56 45.32ZM3.28 40.03a1.64 1.64 0 0 1 3.28 0v5.3a1.64 1.64 0 0 1-3.28 0v-5.3Zm22.9 12.68v-3.5h3.62v3.5h-3.62Zm-3.28-6.78v6.78h-6.44V3.3h23.07v49.42h-6.45v-6.78H22.9Zm26.54-5.9a1.64 1.64 0 0 1 3.28 0v5.3a1.64 1.64 0 0 1-3.28 0v-5.3Z"/>
+								  <path d="M19.8 6.57h3.27v6.56H19.8V6.57ZM26.35 6.57h3.28v6.56h-3.28V6.57ZM32.91 6.57h3.29v6.56H32.9V6.57ZM19.8 16.41h3.27v6.56H19.8v-6.56ZM26.35 16.41h3.28v6.56h-3.28v-6.56ZM32.91 16.41h3.29v6.56H32.9v-6.56ZM19.8 26.25h3.27v6.56H19.8v-6.56ZM26.35 26.25h3.28v6.56h-3.28v-6.56ZM32.91 26.25h3.29v6.56H32.9v-6.56ZM19.8 36.1h3.27v6.55H19.8V36.1ZM26.35 36.1h3.28v6.55h-3.28V36.1ZM32.91 36.1h3.29v6.55H32.9V36.1Z"/>
+								</g>
+								<defs>
+								  <clipPath id="a">
+									<path fill="#fff" d="M0 0h56v56H0z"/>
+								  </clipPath>
+								</defs>
+							  </svg>
+						</div>
+						<div class="tips-card__body">
+							<div class="tips-card__title">40 типов квартир</div>
+							<div class="tips-card__description">площадью от 33 до 80 м<sup>2</sup></div>
+						</div>
+					</div>
+				</li>
+				<li class="advantage-tips__item">
+					<div class="advantage-tips__card tips-card">
+						<div class="tips-card__icon">
+							<svg width="57" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)">
+								  <path d="M47.69 24.02v-4.48c3.18-1.02 4.92-4.54 4.92-7.94 0-4.02-2.38-11.6-6.56-11.6-4.16 0-6.56 7.56-6.56 11.6 0 3.4 1.74 6.92 4.92 7.94v3.64a13.4 13.4 0 0 0-1.64-.1H28v-3.54c3.18-1.02 4.92-4.54 4.92-7.94 0-4.02-2.38-11.6-6.56-11.6-4.16 0-6.56 7.56-6.56 11.6 0 3.4 1.74 6.92 4.92 7.94v3.54H14.7c-1.14-2.98-3.18-6.56-6.38-6.56-5.54 0-8.3 10.73-8.3 16.4 0 7.18 3.65 9.24 6.66 9.72v5.05h3.28v-5.05c4.85-.75 6.57-4.83 6.57-9.72h18.04a1.64 1.64 0 0 1 0 3.29h-3.28a18.12 18.12 0 0 0-18.04 18.15V56H36.2v-1.64a5.04 5.04 0 0 1 4.93-5.03h1.64A13.2 13.2 0 0 0 56 36.21c0-5.52-3.44-10.25-8.31-12.19ZM8.3 39.5c-2.34 0-5.03-.75-5.03-6.57 0-6.24 3.03-13.12 5.03-13.12 2.77 0 4.93 9.14 4.93 13.12 0 3.96-1.06 6.57-4.93 6.57Zm34.46-27.9c0-3.53 2.18-8.3 3.28-8.3 1.1 0 3.28 4.76 3.28 8.3 0 2.67-1.5 4.93-3.28 4.93-1.78 0-3.28-2.26-3.28-4.92Zm-19.69 0c0-3.53 2.19-8.3 3.28-8.3 1.1 0 3.28 4.76 3.28 8.3 0 2.67-1.5 4.93-3.28 4.93-1.78 0-3.28-2.26-3.28-4.92Zm19.69 34.46h-1.64a8.28 8.28 0 0 0-8.04 6.67H16.6A14.83 14.83 0 0 1 31.28 39.5h3.28a4.93 4.93 0 0 0 0-9.85H16.3a30.2 30.2 0 0 0-.6-3.28h27.07a9.91 9.91 0 0 1 9.95 9.85 9.91 9.91 0 0 1-9.95 9.84Z" fill="#fff"/>
+								</g>
+								<defs>
+								  <clipPath id="a">
+									<path fill="#fff" d="M0 0h56v56H0z"/>
+								  </clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="tips-card__body">
+							<div class="tips-card__title">2 280 м<sup>2</sup></div>
+							<div class="tips-card__description">озеленения, прогулочные дорожки</div>
+						</div>
+					</div>
+				</li>
+				<li class="advantage-tips__item">
+					<div class="advantage-tips__card tips-card">
+						<div class="tips-card__icon">
+							<svg width="57" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)">
+								  <path d="M47.8 8.2A27.82 27.82 0 0 0 28 0 27.82 27.82 0 0 0 8.2 8.2 27.82 27.82 0 0 0 0 28c0 7.48 2.91 14.51 8.2 19.8A27.82 27.82 0 0 0 28 56c7.48 0 14.51-2.91 19.8-8.2A27.82 27.82 0 0 0 56 28c0-7.48-2.91-14.5-8.2-19.8Zm.71 6.02a24.57 24.57 0 0 1 3.97 10.37l-.31.27-6.18-3.54 1.48-6.96 1.04-.14ZM37.05 5a24.81 24.81 0 0 1 9.16 6.3 3.16 3.16 0 0 0-1.93 2.29l-1.52 7.13-.04.26-4.4 1.97-8.11-5.91a3.77 3.77 0 0 0-.57-.34v-4.81l.22-.15 5.9-4.3c.8-.58 1.26-1.49 1.3-2.44ZM22.52 35.75l-3.12-9.6c-.06-.2.01-.41.17-.53l8.16-5.93a.47.47 0 0 1 .55 0l8.15 5.93c.16.12.23.33.17.53l-3.12 9.6a.47.47 0 0 1-.44.32H22.96a.47.47 0 0 1-.44-.32Zm.01-31.86a24.7 24.7 0 0 1 10.94 0l.29.95L28 9.04l-5.75-4.2.28-.95ZM18.95 5c.04.96.5 1.87 1.3 2.45l5.89 4.3.22.15v4.8c-.2.1-.38.21-.56.34l-8.13 5.91-4.38-1.96a3.22 3.22 0 0 0-.05-.26l-1.51-7.13a3.16 3.16 0 0 0-1.94-2.28A24.82 24.82 0 0 1 18.95 5ZM7.49 14.23l1.04.14 1.49 6.96-6.19 3.54-.31-.27c.53-3.8 1.92-7.32 3.97-10.37ZM7.04 41.1a24.57 24.57 0 0 1-3.76-12.97 3.18 3.18 0 0 0 2.11-.37l6.33-3.63.23-.14 4.16 1.86c-.02.43.03.88.17 1.31l3.12 9.6.1.26-2.94 3.74a3.17 3.17 0 0 0-.26-.02L9 40.48c-.72-.02-1.4.2-1.96.6Zm1.94 2.67 7.11.25 1.87 6.58a24.86 24.86 0 0 1-8.98-6.83Zm27.65-.73-2 7.02c-.16.59-.15 1.2.02 1.76a24.65 24.65 0 0 1-13.43-.04c.15-.55.16-1.15 0-1.72l-2-7.02a3.25 3.25 0 0 0-.08-.25l2.8-3.57c.33.09.67.14 1.02.14h10.08c.3 0 .61-.04.9-.1l2.77 3.53-.08.25Zm1.25 7.63 1.88-6.65 7.12-.25.05.12a24.85 24.85 0 0 1-9.05 6.78Zm8.97-10.18-7.29.25-.27.02-2.83-3.62.14-.37 3.12-9.6c.14-.44.2-.89.18-1.32l4.15-1.86.23.14 6.33 3.63a3.15 3.15 0 0 0 2.1.37 24.57 24.57 0 0 1-3.8 13.04c-.57-.45-1.3-.7-2.06-.68Z" fill="#fff"/>
+								</g>
+								<defs>
+								  <clipPath id="a">
+									<path fill="#fff" d="M0 0h56v56H0z"/>
+								  </clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="tips-card__body">
+							<div class="tips-card__title">1 052м<sup>2</sup> </div>
+							<div class="tips-card__description">спортзон для отдыха и тренировок</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="advantages__list advantage-list list-reset">
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						<svg width="49" height="49" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#a)" fill="#fff">
+								<path d="M27.15 36.34H11.16c-.63 0-1.14.51-1.14 1.15v7.99c0 .63.5 1.14 1.14 1.14h15.99c.63 0 1.14-.51 1.14-1.14v-8c0-.62-.51-1.14-1.14-1.14ZM46.86 36.34H30.87c-.63 0-1.14.51-1.14 1.15v7.99c0 .63.51 1.14 1.14 1.14h16c.62 0 1.13-.51 1.13-1.14v-8c0-.62-.5-1.14-1.14-1.14ZM11.16 23.31h15.99c.63 0 1.14-.5 1.14-1.14v-8c0-.62-.51-1.13-1.14-1.13H11.16c-.63 0-1.14.5-1.14 1.14v8c0 .62.5 1.13 1.14 1.13ZM46.86 13.04H30.87c-.63 0-1.14.5-1.14 1.14v8c0 .62.51 1.13 1.14 1.13h16c.62 0 1.13-.5 1.13-1.14v-8c0-.62-.5-1.13-1.14-1.13ZM20.77 11.66h15.99c.63 0 1.14-.51 1.14-1.14v-8c0-.63-.51-1.14-1.14-1.14H20.77c-.63 0-1.14.51-1.14 1.14v8c0 .63.51 1.14 1.14 1.14ZM19.96 25.83v8c0 .63.51 1.14 1.14 1.14H37.1c.63 0 1.14-.51 1.14-1.14v-8c0-.63-.51-1.14-1.14-1.14H21.1c-.63 0-1.14.51-1.14 1.14ZM18.27 33.83v-8c0-.63-.5-1.14-1.14-1.14H1.14C.51 24.7 0 25.2 0 25.83v8c0 .63.51 1.14 1.14 1.14h16c.62 0 1.13-.51 1.13-1.14Z"/>
+							</g>
+							<defs>
+								<clipPath id="a">
+								<path fill="#fff" d="M0 0h48v48H0z"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<div class="advantage-list__text">
+						Теплый и прочный кирпичный дом
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+				<li class="advantage-list__item">
+					<div class="advantage-list__icon">
+						
+					</div>
+					<div class="advantage-list__text">
+
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 </body>
 </html>
