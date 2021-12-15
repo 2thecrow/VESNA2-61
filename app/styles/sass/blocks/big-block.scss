@@ -1,5 +1,27 @@
 .big-block {
-    background-image: url(/img/dist/sample-bg.png);
+    position: relative;
+    background-image: url(/img/dist/big-block/big-block.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    &__decor {
+        position: absolute;
+        user-select: none;
+        pointer-events: none;
+        &_top-left {
+            top: 9%;
+            left: 3.3%;
+        }
+        &_top-right {
+            top: 32.8%;
+            right: 9%;
+        }
+        &_bottom-left {
+            bottom: -1.5%;
+            left: -.5%;
+        }
+        &_bottom-right {
+            bottom: 4.5%;
+            right: -.5%;
+        }
+    }
 }

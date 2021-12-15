@@ -1,8 +1,10 @@
 .choose-layout {
+    position: relative;
     height: 1055px;
     background-color: var(--bg-white);
     padding: 115px 0;
-    margin-bottom: 115px;
+    margin-bottom: 155px;
+    z-index: 4;
     &__title {
         text-align: center;
         margin-bottom: 90px;

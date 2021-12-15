@@ -1,0 +1,32 @@
+.about-apartments {
+    position: relative;
+    padding: 0 0 255px 0;
+    z-index: 4;
+}
+
+.apartment-description {
+    max-width: 930px;
+    margin: 0 auto;
+    color: var(--text-white);
+    ::selection {
+        background-color: var(--bg-white);
+        color: var(--accent);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    &__sub-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

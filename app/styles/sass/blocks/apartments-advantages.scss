@@ -1,0 +1,32 @@
+.apartments-advantages {
+    position: relative;
+    margin-top: -95px;
+}
+.apart-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    &__item {
+        flex: 0 0 240px;
+        /* flex: 0 0 17%; */
+        max-width: 240px;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--bg-white);
+        padding: 30px 30px 25px 30px;
+    }
+    &__icon {
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

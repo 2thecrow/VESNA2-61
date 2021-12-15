@@ -1,6 +1,8 @@
 .about-project {
+    position: relative;
     padding: 130px 0 0;
     margin-bottom: -130px;
+    z-index: 1;
     &__map {
         
     }
@@ -46,14 +48,25 @@
     &_1 {
         top: 7.5%;
         left: 9.4%;
+        .info-body {
+            transform: translate(-30%);
+        }
     }
     &_2 {
         top: 24.2%;
         left: 3.7%;
+        .info-body {
+            top: auto;
+            bottom: auto;
+            left: 44px;
+            transform: none;
+        }
     }
     &_3 {
         top: 23.2%;
         left: 25.5%;
+        
+        
     }
     &_4 {
         top: 19.3%;
@@ -66,10 +79,22 @@
     &_6 {
         top: 64.3%;
         left: 30.7%;
+        .info-body {
+            top: auto;
+            bottom: 44px;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
     &_7 {
         top: 75.4%;
         left: 17.4%;
+        .info-body {
+            top: auto;
+            bottom: 44px;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
     &.active {
         .info-card__header {
@@ -127,6 +152,14 @@
     left: 44px;
     width: 450px;
     height: 500px;
+    top: 44px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    ::selection {
+        color: var(--accent);
+        background-color: var(--bg-white);
+    }
     &__container {
         position: relative;
         display: flex;
@@ -168,6 +201,7 @@
     }
     &__content {
         padding: 75px 55px;
+        
     }
     &__title {
         position: relative;
