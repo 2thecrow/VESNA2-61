@@ -1,0 +1,10 @@
+.choose-layout {
+    height: 1055px;
+    background-color: var(--bg-white);
+    padding: 115px 0;
+    margin-bottom: 115px;
+    &__title {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+}

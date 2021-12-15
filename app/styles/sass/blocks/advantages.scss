@@ -1,6 +1,6 @@
 .advantages {
-    padding: 245px 0 600px;
-    background-image: url(/img/dist/advantages/advantages-bg.jpg);
+    padding: 245px 0 120px;
+    /* background-image: url(/img/dist/advantages/advantages-bg.jpg); */
     &__title {
         color: var(--text-white);
         margin-bottom: 80px;
@@ -59,8 +59,8 @@
 .advantage-list {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 30px;
-    gap: 30px;
+    grid-gap: 55px 30px;
+    gap: 55px 30px;
     &__item {
         display: flex;
     }

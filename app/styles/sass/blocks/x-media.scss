@@ -214,6 +214,8 @@
     .advantage-list {
         max-width: 330px;
         grid-template-columns: 1fr;
+        grid-gap: 30px;
+        gap: 30px;
     }
     .hero__logo {
         margin-bottom: 10px;
