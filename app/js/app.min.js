@@ -24,6 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
 			scrollTop: $(hash).offset().top
 		  }, 300);
 		}
-	  });
+	});
+
+	/* About Project Badge clicker */
+	$('.info-card__header').on('click', function (e) {
+		
+		/* Show content */
+		$(".info-card__body").not($(this).next()).slideUp("fast");
+		$(this).next(".info-card__body").slideToggle("fast");
+		
+		/* Fix z-index */
+		$(".info-card").removeClass("active");
+		$(this).closest(".info-card").toggleClass("active");
+	});
+
+
+
+	/* Click outside badge */
+	$(document).on('click', function (e) {
+		if ($(e.target).closest(".info-card").length === 0) {
+			/* Hide all content */
+			$(".info-card__body").slideUp("fast");
+			/* Remove fix */
+			$(".info-card").removeClass("active");
+		}
+	});
 
 })
