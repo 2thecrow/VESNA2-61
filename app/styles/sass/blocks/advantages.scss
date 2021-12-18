@@ -57,10 +57,12 @@
 }
 
 .advantage-list {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 55px 30px;
     gap: 55px 30px;
+    z-index: 1;
     &__item {
         display: flex;
     }
