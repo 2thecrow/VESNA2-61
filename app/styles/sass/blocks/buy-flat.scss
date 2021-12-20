@@ -1,0 +1,73 @@
+.buy-flat {
+    padding: 85px 0 0;
+    &__title {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    &__container {
+        background-color: var(--bg-white);
+        padding: 125px 0 355px;
+        box-shadow: 0px 8px 64px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.buy-cards {
+    &__title {
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+        gap: 30px;
+    }
+    &__item {
+        &_book-flat {
+            .buy-card {
+                background-image: url(/img/dist/how-to-buy/book-flat.png);
+            }
+        }
+        &_pay-method {
+            .buy-card {
+                background-image: url(/img/dist/how-to-buy/pay-method.png);
+            }
+        }
+        &_docs {
+            .buy-card {
+                background-image: url(/img/dist/how-to-buy/docs.png);
+            }
+        }
+        &_keys {
+            .buy-card {
+                background-image: url(/img/dist/how-to-buy/keys.png);
+            }
+        }
+    }
+}
+
+.buy-card {
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 75px 0 0;
+    &__step {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    &__title {
+        max-width: 250px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+    &__description {
+        max-width: 329px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

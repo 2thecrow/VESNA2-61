@@ -117,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/* Filter show flats */
 	$('.flats-nav__link').on('click', function () {
-		var filter = $(this).attr('data-filter');
 
+		var filter = $(this).attr('data-filter');
 		$('.flat-slider .swiper-slide').css('display', 'none');
 		$('.flat-slider .swiper-slide.' + filter).css('display', 'block');
 
@@ -130,7 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 	/* Show all flats */
 	$('.flats-show').on('click', function () {
-
 		$('.flat-slider .swiper-slide').css('display', 'block');
 
 		flatsSlider.updateSize();

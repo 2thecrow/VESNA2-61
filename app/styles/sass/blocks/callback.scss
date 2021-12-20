@@ -1,0 +1,11 @@
+.callback {
+    &__box {
+        display: flex;
+    }
+    &__description {
+        max-width: 255px;
+        width: 100%;
+    }
+    &__title {}
+    &__desc {}
+}
