@@ -139,4 +139,170 @@ document.addEventListener('DOMContentLoaded', () => {
 		return false;
 	});
 
+
+	const bankSlider = new Swiper('.bank-slider', {
+		// Optional parameters
+		autoHeight: true,
+		spaceBetween: 50,
+		slidesPerView: 'auto',
+		freeMode: true,
+
+		observer: true,
+		observeParents: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			dynamicBullets: true,
+			clickable: true
+		},
+	  
+	});
+
+	const galleryNav = new Swiper('.gallery-nav', {
+		// Optional parameters
+		autoHeight: true,
+		spaceBetween: 105,
+		slidesPerView: 'auto',
+		freeMode: true,
+
+		observer: true,
+		observeParents: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			dynamicBullets: true,
+			clickable: true
+		},
+	  
+	});
+
+
+	$('.gallery-nav__link').click(function (e) {
+		e.preventDefault();
+		$('.gallery-nav__link').removeClass('gallery-nav__link_active');
+		$('.gallery-tabs__tab').removeClass('gallery-tabs__tab_active');
+		var href = $(this).attr('href');
+		$(this).addClass('gallery-nav__link_active');
+		$(href).addClass('gallery-tabs__tab_active');
+	});
+
+
+	var BigGallery = document.querySelectorAll('.big-gallery');
+	BigGallery.forEach(function (el) {
+		var swiper = new Swiper(el, {
+		/* init slider when parant is hidden */
+		observer: true,
+		observeParents: true,
+		slidesPerView: 1,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		// If we need pagination
+		pagination: {
+			el: '.custom-swiper-pagination',
+			type: 'fraction',
+			renderFraction: function renderFraction(currentClass, totalClass) {
+			return ' Фото ' +'<span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
+			}
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.big-gallery-button-next',
+			prevEl: '.big-gallery-button-prev'
+		}
+		});
+	});
+
+	/* Build progress filter by years*/
+
+	$('.build-progress-nav').on('click', 'a', function () {
+		var filter = $(this).attr('data-filter');
+		$('.build-progress-nav__link').removeClass('build-progress-nav__link_active');
+		$('.build-progress-slider .swiper-slide').css('display', 'none');
+		$('.build-progress-slider .swiper-slide.' + filter).css('display', 'block');
+	
+		var year = filter.replace("filter", "");
+		if (year == "all"){
+			$('#filter-month option').css("display", "block");
+		} else {
+			$("#filter-month option[value*=" + year + "]").css("display", "block");
+			$("#filter-month option:not([value*=" + year + "])").not("[value=filterall]").css("display", "none");
+		}
+		
+		$("#filter-month option").attr("selected", false);
+		
+		$(this).addClass('build-progress-nav__link_active');
+		buildProgress.updateSize();
+		buildProgress.updateSlides();
+		buildProgress.updateSlidesClasses();
+		buildProgress.slideTo(0, 1000, false);
+		return false;
+	});
+	/* Build progress filter by month*/
+	
+	$('#filter-month').on('change', function () {
+		var sel = this.value;
+		$('.build-progress-slider .swiper-slide').css('display', 'none');
+		$('.build-progress-slider .swiper-slide' + '.' + sel).css('display', '');
+		buildProgress.updateSize();
+		buildProgress.updateSlides();
+		buildProgress.updateSlidesClasses();
+		buildProgress.slideTo(0, 1000, false);
+		return false;
+	});
+
+	var buildProgress = new Swiper('.build-progress-slider', {
+		observer: true,
+		observeParents: true,
+		slidesPerView: 3,
+		spaceBetween: 30,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev'
+		},
+		breakpoints: {
+		  320: {
+			slidesPerView: 1
+		  },
+		  576: {
+			slidesPerView: 1.5,
+			spaceBetween: 30
+		  },
+		  // when window width is >= 480px
+		  1000: {
+			slidesPerView: 2.2,
+			spaceBetween: 30
+		  },
+		  // when window width is >= 640px
+		  1200: {
+			slidesPerView: 2.4,
+			spaceBetween: 30
+		  },
+		  1500: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		  }
+		},
+	});
+
+	$(document).ready(function () {
+		if ($("#filter-month").length > 0) {
+			$("#filter-month option").eq(0).attr("selected", true)
+			$("#filter-month").trigger("change");
+		}
+	});
+
 })
