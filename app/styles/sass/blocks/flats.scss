@@ -25,12 +25,12 @@
         display: flex;
         align-items: center;
         color: var(--text-white);
-        background-color: #3AB260;
+        background: #3AB260;
         padding: 25px 20px 25px 0;
         border-radius: 71px 0px;
         text-decoration: none;
         &:hover {
-            background-color: #2c8648;
+            background: radial-gradient(87.5% 831.25% at 67.86% 12.5%, #50D77B 0%, #37AC5C 100%);
         }
     }
     &__icon {
@@ -145,10 +145,11 @@
         padding: 13px 30px 14px;
         text-transform: uppercase;
         text-decoration: none;
+        border-radius: 4px;
         box-sizing: border-box;
         &:hover {
             color: var(--text-white);
-            background-color: #3AB260;
+            background: radial-gradient(87.5% 831.25% at 67.86% 12.5%, #50D77B 0%, #37AC5C 100%);
         }
     }
 

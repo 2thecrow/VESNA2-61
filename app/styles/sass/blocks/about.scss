@@ -1,0 +1,103 @@
+.about {
+    padding: 85px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    &__header {
+        display: flex;    
+        background-color: var(--bg-white);
+        margin-bottom: 50px;
+    }
+    &__logo {
+        flex: 0 0 340px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 65px 40px 65px 15px;
+    }
+    &__stats {}
+}
+
+.about-stats {
+    width: 100%;
+    padding: 45px 30px 35px;
+    background-image: url(/img/dist/about/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__list {
+        max-width: 1005px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 70px;
+        gap: 70px;
+        margin: 0 auto;
+    }
+    &__item {
+        color: var(--text-white);
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 25px;
+        &::selection {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
+        sup {
+            font-size: 25px;
+            line-height: 1;
+        }
+    }
+    &__description {
+        font-size: 24px;
+        line-height: 32px;
+        &::selection {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
+    }
+}
+
+
+.information-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    gap: 30px;
+    &__item {}
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 35px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.custom-list {
+    margin-top: 15px;
+    &__item {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 12px;
+            width: 8px;
+            height: 8px;
+            background-image: url(/img/dist/icons/custom-list-icon.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
