@@ -45,6 +45,9 @@
         }
     }
     &__phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-bottom: 5px;
     }
     &__phone-link {
@@ -269,6 +272,9 @@
         flex-wrap: wrap;
     }
     &__field {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
         &_radio {margin-right: 30px;}
         &_name {margin-right: 30px;}
         &_phone {margin-right: 30px;}
@@ -309,7 +315,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 45px;
+        margin-top: 15px;
         .check-box {
             max-width: 207px;
             display: flex;

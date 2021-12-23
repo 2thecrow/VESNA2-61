@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/* Fix header on scroll */
 
-	window.addEventListener("scroll", function () {
-		var headerHeight = document.querySelector(".header").offsetHeight;
+	/* window.addEventListener("scroll", function () {
+		var headerHeight = document.querySelector(".hero").offsetHeight;
 		var headerOffset = document.documentElement.scrollTop;
-		var headerNav = document.querySelector(".header__container");
+		var headerNav = document.querySelector(".header");
 	
 		if (headerHeight < headerOffset) {
 		  headerNav.classList.add('sticky');
 		} else {
 		  headerNav.classList.remove('sticky');
 		}
-	});
+	}); */
 
 	/* ScrollTo */
 
@@ -70,14 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 		// If we need pagination
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.flats-pagination',
 			dynamicBullets: true,
 		},
 	  
 		// Navigation arrows
 		navigation: {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev',
+		  nextEl: '.flats-button-prev',
+		  prevEl: '.flats-button-next',
 		},
 	  
 	});
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// If we need pagination
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.flats-nav-pagination',
 			dynamicBullets: true,
 			clickable: true
 		},
@@ -155,14 +155,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// Navigation arrows
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.banks-button-next',
+			prevEl: '.banks-button-prev',
 		},
 		// If we need pagination
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.banks-pagination',
 			dynamicBullets: true,
 			clickable: true
+		},
+	  
+	});
+
+	const methodsSlider = new Swiper('.methods-slider', {
+		// Optional parameters
+		autoHeight: true,
+		spaceBetween: 30,
+		slidesPerView: 'auto',
+		freeMode: true,
+
+		observer: true,
+		observeParents: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.payment-methods-button-next',
+			prevEl: '.payment-methods-button-prev',
 		},
 	  
 	});
@@ -181,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// If we need pagination
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.gallery-nav-pagination',
 			dynamicBullets: true,
 			clickable: true
 		},
@@ -220,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		navigation: {
 			nextEl: '.big-gallery-button-next',
 			prevEl: '.big-gallery-button-prev'
-		}
+		},
 		});
 	});
 
@@ -270,8 +291,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		navigation: {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev'
+		  nextEl: '.build-progress-button-next',
+		  prevEl: '.build-progress-button-prev'
 		},
 		breakpoints: {
 		  320: {

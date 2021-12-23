@@ -51,7 +51,7 @@
                 color: #727272;
             }
             &::before {
-                border: 1px dashed var(--accent-hover);
+                border-bottom: 1px dashed var(--accent-hover);
             }
         }
         &_active {
@@ -97,8 +97,6 @@
     padding: 21px 197px 17px 22px;
     border: 1px solid #F6F6F6;
     outline: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-image: url(/img/dist/build-progress/select-arrow.png);
     background-repeat: no-repeat,repeat;

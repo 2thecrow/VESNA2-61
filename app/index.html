@@ -42,19 +42,19 @@
 						<a href="#" class="nav__link normal-hover transition">О проекте</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link normal-hover transition">Квартиры</a>
+						<a href="#flats" class="nav__link normal-hover transition">Квартиры</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link normal-hover transition">Инфраструктура</a>
+						<a href="#infrastructure" class="nav__link normal-hover transition">Инфраструктура</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link normal-hover transition">Как купить</a>
+						<a href="#buy-flat" class="nav__link normal-hover transition">Как купить</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link normal-hover transition">Галерея</a>
+						<a href="#gallery" class="nav__link normal-hover transition">Галерея</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link normal-hover transition">Контакты</a>
+						<a href="#contacts" class="nav__link normal-hover transition">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -892,7 +892,7 @@
 	</div>
 
 	<!-- Flats -->
-	<div class="flats wrapper">
+	<div class="flats wrapper" id="flats">
 		<div class="container">
 			<!-- Navs -->
 			<div class="flats__header flats-header">
@@ -973,7 +973,7 @@
 							</div>
 						</div>
 						<!-- If we need pagination -->
-						<div class="swiper-pagination"></div>
+						<div class="flats-nav-pagination swiper-pagination"></div>
 					  </div>
 				</div>
 				<!-- Filter all -->
@@ -1169,10 +1169,10 @@
 					</div>
 
 					<div class="slider-nav">
-						<div class="swiper-pagination"></div>
+						<div class="flats-pagination swiper-pagination"></div>
 				
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="flats-button-prev swiper-button-prev"></div>
+						<div class="flats-button-next swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
@@ -1180,7 +1180,7 @@
 	</div>
 
 	<!-- Infrastructure  -->
-	<div class="infrastructure wrapper">
+	<div class="infrastructure wrapper" id="infrastructure">
 		<div class="infrastructure__description container">
 			<!-- Section header -->
 			<div class="infrastructure__header">
@@ -1318,7 +1318,7 @@
 	</div>
 
 	<!-- How to buy flats -->
-	<div class="buy-flat wrapper">
+	<div class="buy-flat wrapper" id="buy-flat">
 		<h2 class="buy-flat__title section-title">Как купить квартиру</h2>
 		<div class="buy-flat__container container-large">
 			<div class="buy-flat__list container buy-cards">
@@ -1405,10 +1405,31 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="payment-methods__card">
-								<img src="/img/dist/test-img/" alt="payment methods" loading="lazy">
+								<img src="/img/dist/test-img/trade.jpg" alt="payment methods" loading="lazy">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="payment-methods__card">
+								<img src="/img/dist/test-img/nal.jpg" alt="payment methods" loading="lazy">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="payment-methods__card">
+								<img src="/img/dist/test-img/rass.jpg" alt="payment methods" loading="lazy">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="payment-methods__card">
+								<img src="/img/dist/test-img/trade-in.jpg" alt="payment methods" loading="lazy">
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="slider-nav">
+					<div class="payment-methods-pagination swiper-pagination"></div>
+			
+					<div class="payment-methods-button-prev swiper-button-prev"></div>
+					<div class="payment-methods-button-next swiper-button-next"></div>
 				</div>
 			</div>
 		</div>
@@ -1435,7 +1456,7 @@
 						</div>
 						<div class="callback-form__field">
 							<div class="check-box">
-								<input type="checkbox" name="" id="checkbox-agree" class="check-box__input">
+								<input type="checkbox" name="" id="checkbox-agree" class="check-box__input" checked>
 								<label for="checkbox-agree" class="check-box__label">Согласен (-на) на обработку персональных данных</label>
 							</div>
 						</div>
@@ -1495,10 +1516,10 @@
 						</div>
 					</div>
 					<div class="slider-nav">
-						<div class="swiper-pagination"></div>
+						<div class="banks-pagination swiper-pagination"></div>
 				
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="banks-button-prev swiper-button-prev"></div>
+						<div class="banks-button-next swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
@@ -1512,7 +1533,7 @@
 	</div>
 
 	<!-- Gallery -->
-	<div class="gallery wrapper">
+	<div class="gallery wrapper" id="gallery">
 		<h2 class="gallery__title section-title">Галерея</h2>
 		<div class="gallery__nav">
 			<div class="gallery-nav swiper">
@@ -1534,7 +1555,7 @@
 					</div>
 				</div>
 				<div class="gallery-nav__navs">
-					<div class="swiper-pagination"></div>
+					<div class="gallery-nav-pagination swiper-pagination"></div>
 				</div>
 			</div>
 		</div>
@@ -1554,9 +1575,9 @@
 						</div>
 					</div>
 					<div class="big-gallery__nav">
-						<div class="swiper-button-prev big-gallery-button-prev"></div>
+						<div class="big-gallery-button-prev swiper-button-prev"></div>
 						<div class="custom-swiper-pagination swiper-pagination-fraction"></div>
-						<div class="swiper-button-next big-gallery-button-next"></div>
+						<div class="big-gallery-button-next swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
@@ -1580,9 +1601,9 @@
 						</div>
 					</div>
 					<div class="big-gallery__nav">
-						<div class="swiper-button-prev big-gallery-button-prev"></div>
+						<div class="big-gallery-button-prev swiper-button-prev"></div>
 						<div class="custom-swiper-pagination swiper-pagination-fraction"></div>
-						<div class="swiper-button-next big-gallery-button-next"></div>
+						<div class="big-gallery-button-next swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
@@ -1611,9 +1632,9 @@
 						</div>
 					</div>
 					<div class="big-gallery__nav">
-						<div class="swiper-button-prev big-gallery-button-prev"></div>
+						<div class="big-gallery-button-prev swiper-button-prev"></div>
 						<div class="custom-swiper-pagination swiper-pagination-fraction"></div>
-						<div class="swiper-button-next big-gallery-button-next"></div>
+						<div class="big-gallery-button-next swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
@@ -1682,14 +1703,14 @@
 				</div>
 			</div>
 			<div class="slider-nav">
-				<div class="build-button-prev swiper-button-prev"></div>
-				<div class="build-button-next swiper-button-next"></div>
+				<div class="build-progress-button-prev swiper-button-prev"></div>
+				<div class="build-progress-button-next swiper-button-next"></div>
 			</div>
 		</div>
 	</div>
 
 	<!-- About -->
-	<div class="about">
+	<div class="about wrapper">
 		<div class="container-large">
 			<h2 class="about__title section-title">О застройщике</h2>
 			<div class="about__header">
@@ -1767,7 +1788,7 @@
 	</div>
 
 	<!-- Contacts -->
-	<div class="contacts">
+	<div class="contacts wrapper" id="contacts">
 		<h2 class="contacts__title section-title">Контакты</h2>
 		<div class="container-large">
 			<div class="contacts__container">
@@ -1872,7 +1893,7 @@
 									вам формате (онлайн, на площадке или в офисе продаж).
 								</div>
 								<div class="check-box">
-									<input type="checkbox" name="" id="contack-checkbox-agree" class="check-box__input">
+									<input type="checkbox" name="" id="contack-checkbox-agree" class="check-box__input" checked>
 									<label for="contack-checkbox-agree" class="check-box__label">Согласен (-на) на обработку персональных данных</label>
 								</div>
 							</div>
@@ -1893,10 +1914,10 @@
 					Проектная декларация размещена в единой информационной системе жилищного строительства в сети 
 					Интернет на сайте: <a href="#" class="footer__link normal-hover transition">наш.дом.рф</a>
 				</div>
-				<a href="#" class="footer__logo">
-					<img src="/img/dist/footer/footer-logo.png" alt="Footer company logo" loading="lazy">
-				</a>
 			</div>
+			<a href="#" class="footer__logo">
+				<img src="/img/dist/footer/footer-logo.png" alt="Footer company logo" loading="lazy">
+			</a>
 			<div class="footer__system">
 				<a href="" class="footer__copyright normal-hover transition">Политика конфиденциальности</a>
 				<a href="" class="footer__developer normal-hover transition">Разработка сайта</a>

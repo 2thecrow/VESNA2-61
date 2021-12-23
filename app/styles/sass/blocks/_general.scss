@@ -155,3 +155,28 @@ h1,h2,h3,h4,h5 {
     font-size: 68px;
     line-height: 72px;
 }
+
+.check-box {
+	display: flex;
+	align-items: center;
+    margin-top: 25px;
+    &__input {
+        display: none;
+        &:checked {
+            ~ .check-box__label {
+                background-image: url(/img/dist/form/check-box_checked.png);
+            }
+        }
+    }
+    &__label {
+        cursor: pointer;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 28px;
+        color: #808080;
+        background-image: url(/img/dist/form/check-box.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 25px;
+    }
+}

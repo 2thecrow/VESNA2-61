@@ -1,6 +1,7 @@
 .footer {
     background: radial-gradient(87.5% 831.25% at 67.86% 12.5%, #50D77B 0%, #37AC5C 100%);
     padding: 170px 0 40px;
+    
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -15,12 +16,20 @@
         line-height: 20px;
         color: var(--text-white);
         margin-right: 50px;
+        &::selection {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
     }
     &__link {
         display: inline-flex;
         font-size: 13px;
         line-height: 20px;
         color: var(--text-white);
+        &::selection {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
         &::after {
             opacity: 1;
             width: 100%;
@@ -32,6 +41,7 @@
             border-bottom: 1px solid var(--bg-white);
             transition: all .3s ease-in-out;
         }
+
         &:hover {
             color: #343a40;
             &::after {
@@ -53,6 +63,10 @@
         line-height: 24px;
         color: var(--text-white);
         text-decoration: none;
+        &::selection {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
         &::before {
             bottom: 0;
             height: 1px;
@@ -64,6 +78,10 @@
         line-height: 24px;
         color: var(--text-white);
         text-decoration: none;
+        &::selection {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
         &::before {
             bottom: 0;
             height: 1px;

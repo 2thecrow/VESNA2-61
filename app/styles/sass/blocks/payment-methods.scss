@@ -1,4 +1,5 @@
 .payment-methods {
+    display: none;
     margin-top: -185px;
     margin-bottom: 80px;
     &__title {
@@ -48,6 +49,13 @@
 }
 
 .payment-methods__slider {
+    position: relative;
     display: none;
-    overflow: hidden;
+}
+
+.methods-slider {
+    .swiper-slide {
+        width: auto;
+    }
+    
 }

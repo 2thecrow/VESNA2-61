@@ -1,4 +1,11 @@
-
+@media screen and (max-width: 1780px) {
+    .banks__container {
+        margin: 0 55px;
+    }
+    .banks .container-large {
+        padding: 65px 40px;
+    }
+}
 @media screen and (max-width: 1695px) {
     .header__container {
         justify-content: space-between;
@@ -25,7 +32,6 @@
         padding: 120px 0 120px;
     }
 }
-
 @media screen and (max-width: 1650px) {
     .nav__item:not(:last-child) {
         margin-right: 30px;
@@ -34,13 +40,18 @@
         right: 30px;
     }
 }
+@media screen and (max-width: 1550px) {
+    .build-progress__slider {
+        margin: 0 55px;
+    }
+}
+
 @media screen and (max-width: 1520px) {
     
     .flats__slider {
         margin: 0 40px;
     }
 }
-
 @media screen and (max-width: 1480px) {
     .flats-nav {
         padding-left: 15px;
@@ -80,7 +91,29 @@
         padding: 12px 45px;
     }
 }
+@media screen and (max-width: 1460px) {
+    .payment-methods__list {
+        display: none;
+    }
+    .payment-methods__slider {
+        display: block;
+        margin: 0 40px;
+    }
+}
 @media screen and (max-width: 1400px) {
+    .footer__container {
+        justify-content: space-between;
+    }
+    .footer__content {
+        margin-right: 15px
+    }
+    .footer__text {
+        max-width: 700px;
+        margin-right: 40px;
+    }
+    .banks .container-large {
+        padding: 65px 20px;
+    }
     .slide-card {
         padding: 30px 30px;
     }
@@ -112,6 +145,38 @@
     }
 }
 @media screen and (max-width: 1300px) {
+    .infrastructure-card_food {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .infrastructure-card_food .infrastructure-card__body {
+        position: relative;
+    }
+    .infrastructure-card_food .infrastructure-card__container {
+        max-width: 100%;
+        min-height: auto;
+    }
+    .infrastructure-card_bus {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .infrastructure-card_bus .infrastructure-card__body {
+        position: relative;
+    }
+    .infrastructure-card_bus .infrastructure-card__container {
+        max-width: 100%;
+        min-height: auto;
+    }
+    .infrastructure-card_bus .infrastructure-card__image img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .infrastructure-card_food  .infrastructure-card__image img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
     .project-map__badge {
         max-width: 450px;
         padding: 70px 55px 70px 80px;
@@ -128,7 +193,6 @@
         margin-bottom: 5px;
     }
 }
-
 @media screen and (max-width: 1250px) {
     .slide-card__header {
         flex-direction: column;
@@ -154,7 +218,41 @@
         grid-template-columns: repeat(3,1fr);
     }
 }
+@media screen and (max-width: 1216px) {
+    .contact-form__field_phone {
+        margin-right: 0;
+    }
+    .contact-form__title {
+        text-align: center;
+    }
+    .contact-form__form {
+        max-width: 931px;
+        margin: 0 auto;
+    }
+    .contact-form__field_submit {
+        display: flex;
+        justify-content: center;
+        flex: 0 0 100%;
+        order: 5;
+    }
+    .contact-form__agree {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+    .contact-form__agree-text {
+        max-width: 500px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .contact-form__field_agree {
+        flex: 0 0 100%;
+        order: 6;
+    }
+}
 @media screen and (max-width: 1215px) {
+    
     .flats-nav__icon {
         margin: 0 15px 0 -14px;
     }
@@ -172,6 +270,16 @@
 }
 @media screen and (max-width: 1200px) {
     /* 90 */
+    .contact-info {
+        padding: 80px 15px 25px 30px;
+        flex: 0 0 375px;
+    }
+    .buy-flat__container {
+        padding: 90px 0 300px;
+    }
+    .infrastructure__description {
+        margin-bottom: 160px;
+    }
     .flats-nav {
         margin-bottom: 30px;
     }
@@ -201,6 +309,14 @@
     }
 }
 @media screen and (max-width: 1100px) {
+    .buy-card__title {
+        max-width: 100%;
+    }
+    .buy-cards__list {
+        max-width: 690px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
     .header__logo {
         max-width: 130px;
     }
@@ -224,9 +340,21 @@
     }
 }
 @media screen and (max-width: 1000px) {
-    
     .fits-list {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 977px) {
+    .contact-form__field_radio {
+        flex: 0 0 100%;
+        margin-right: 0;
+    }
+    
+    .contact-form__field_name {
+        margin-right: 30px;
+    }
+    .contact-form__form {
+        max-width: 451px;
     }
 }
 @media screen and (max-width: 950px) {
@@ -276,7 +404,6 @@
         padding: 20px 15px;
     }
 }
-
 @media screen and (max-width: 910px) {
     
     .apartment-description__title {
@@ -304,7 +431,6 @@
         margin: 0 auto;
     }
 }
-
 @media screen and (max-width: 850px) {
     .flats-nav__item {
         flex: 0 0 50%;
@@ -354,9 +480,11 @@
         justify-content: center;
     }
 }
-
 @media screen and (max-width: 700px) {
     /* 60 */
+    .contact-form {
+        padding: 60px 0;
+    }
     .big-block__decor_bottom-left,
     .big-block__decor_top-right {
         display: none;
@@ -388,7 +516,6 @@
         font-size: 16px;
     }
 }
-
 @media screen and (max-width: 550px) {
     .slide-card__more {
         margin: 0 auto;
@@ -402,6 +529,21 @@
     
 }
 @media screen and (max-width: 500px) {
+    .radio-group__label {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    .radio-group__field {
+        flex: 1;
+    }
+    .contact-form__field_name {
+        flex: 0 0 calc(50% - 15px);
+        margin-right: 30px;
+    }
+    .contact-form__field_phone {
+        flex: 0 0 calc(50% - 15px);
+        margin-right: 0;
+    }
     .slider-nav .swiper-pagination {
         display: block;
     }
@@ -432,6 +574,16 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .contact-form__field_name {
+        flex: 0 0 100%;
+        margin-right: 0;
+    }
+    .contact-form__field_phone {
+        flex: 0 0 100%;
+    }
+    .contact-form__input-text {
+        max-width: 100%;
+    }
     .fits-list {
         grid-template-columns: 1fr;
     }
@@ -447,5 +599,11 @@
     .tips-card__description {
         font-size: 16px;
         line-height: 22px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .radio-group__label {
+        font-size: 12px;
+        padding: 5px 5px;
     }
 }
