@@ -19,8 +19,11 @@
 
 
 .bank-slider {
+    height: 60px;
     .swiper-slide {
         width: auto;
+        display: flex;
+        align-items: center;
     }
     &__item {
         display: flex;

@@ -1,5 +1,4 @@
 .infrastructure {
-    display: none;
     padding: 15px 0 110px 0;
     &__description {
         margin-bottom: 130px;
@@ -277,4 +276,24 @@
         border-radius: 15px 0px;
         transition: all .3s ease-in-out;
     }
+}
+
+.filter-slider__mobile {
+    display: none;
+    position: relative;
+    background-color: var(--bg-white);
+    padding: 0 15px;
+    .swiper-pagination-bullet-active {
+        background: var(--accent);
+    }
+}
+.filter-slider {
+    height: 80px;
+    .swiper-slide {
+        width: auto;
+    }
+    .filter-list__item {
+        display: inline-flex;
+    }
+    
 }

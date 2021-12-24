@@ -8,11 +8,12 @@
     flex-wrap: wrap;
     margin: 0 -15px;
     &__item {
-        flex: 0 0 240px;
-        /* flex: 0 0 17%; */
         max-width: 240px;
+        flex: 0 0 240px;
         padding: 0 15px;
-        margin-bottom: 30px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
     &__card {
         display: flex;

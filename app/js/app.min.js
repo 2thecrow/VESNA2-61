@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const bankSlider = new Swiper('.bank-slider', {
 		// Optional parameters
-		autoHeight: true,
+		/* autoHeight: true, */
 		spaceBetween: 50,
 		slidesPerView: 'auto',
 		freeMode: true,
@@ -208,6 +208,28 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	  
 	});
+
+	const InfaFilterSlider = new Swiper('.filter-slider', {
+		// Optional parameters
+		spaceBetween: 30,
+		slidesPerView: 'auto',
+		freeMode: true,
+
+		observer: true,
+		observeParents: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+
+		// If we need pagination
+		pagination: {
+			el: '.filter-slider-pagination',
+			dynamicBullets: true,
+			clickable: true
+		},
+	  
+	});
+
+	
 
 
 	$('.gallery-nav__link').click(function (e) {
